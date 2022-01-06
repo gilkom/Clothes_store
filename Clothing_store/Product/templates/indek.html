@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Welcome!</h1>
+
+    {% for cat in categories %}
+
+        <p><a href = "category/{{ cat.id }}"> {{ cat.name }}</a></p>
+
+    {% endfor %}
+</body>
+</html>
