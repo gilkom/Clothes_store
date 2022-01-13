@@ -5,8 +5,9 @@
         {% if category_product %}
 
             {% for product in category_product %}
-
-                <p><a href = "/product/{{ product.id }}"> {{ product.name }} </a></p>
+                <ul class="list-group">
+                    <a href="/product/{{ product.id }}" class="list-group-item list-group-item-action">{{ product.name }}</a>
+                </ul>
 
             {% endfor %}
         {% endif %}
